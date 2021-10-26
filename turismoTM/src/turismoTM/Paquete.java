@@ -2,6 +2,7 @@ package turismoTM;
 
 import java.util.List;
 
+
 public abstract class Paquete {
 
 	public abstract float getCosto();

@@ -12,6 +12,13 @@ public class Atraccion extends Paquete {
 	int cupo;
 	String nombre;
 
+	/**
+	 * Construye una nueva atracción
+	 * @param nombre El nombre de la atracción
+	 * @param costo El costo al aceptar la atracción de forma individual
+	 * @param tiempo Tiempo ocupado por la atracción
+	 * @param cupo Cantidad de personas que pueden acceder a la atracción
+	 */
 	public Atraccion(String nombre, float costo, float tiempo, int cupo) {
 		super();
 		this.costo = costo;

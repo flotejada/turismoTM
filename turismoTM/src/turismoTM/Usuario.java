@@ -9,11 +9,17 @@ import java.util.Scanner;
 import java.util.Set;
 
 public class Usuario {
-	String nombre;
-	float presupuesto;
-	float tiempo;
-	Set<Atraccion> atracciones;
+	private String nombre;
+	private float presupuesto;
+	private float tiempo;
+	private Set<Atraccion> atracciones;
 
+	/**
+	 * Un usuario es una persona que puede acceptar paquetes en base a su presupuesto y tiempo
+	 * @param nombre El nombre la persona. Este valor sirve como idenfificador
+	 * @param presupuesto Cantidad de dinero que dispone el usuario
+	 * @param tiempo Tiempo disponible para que el usuario pueda asistir a atracciones;
+	 */
 	public Usuario(String nombre, float presupuesto, float tiempo) {
 		super();
 		this.nombre = nombre;
@@ -24,6 +30,12 @@ public class Usuario {
 
 	public String getNombre() {
 		return this.nombre;
+	}
+	public float getPresupuesto() {
+		return this.presupuesto;
+	}
+	public float getTiempo() {
+		return this.tiempo;
 	}
 
 	public void aceptaPaquete(Paquete paquete) {
